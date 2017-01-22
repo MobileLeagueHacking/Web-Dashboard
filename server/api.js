@@ -29,7 +29,7 @@ Api1.addRoute('events/:region', {
 Api1.addRoute('hackathon/:hackID', {
     get: function() {
         var hackathonID = this.urlParams.hackID;
-        var hackathon = Meteor.users.findOne({ hackathon_id: "5MZqdPPJhZLYGutwx" });
+        var hackathon = Meteor.users.findOne({ hackathon_id: hackathonID });
         console.log(hackathon);
         return hackathon; 
     }

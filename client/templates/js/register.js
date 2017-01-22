@@ -128,8 +128,3 @@ Template.appTemplatePart.helpers({
         return rec;
     }
 });
-
-Template.part2.onRendered(function() {
-    // $('ul.tabs').tabs('select_tab', 'tabItem1');
-});
-// $(".ifAppClass").hide();
