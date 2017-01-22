@@ -5,6 +5,7 @@ Template.login.events({
                 console.log(error);
             } else {
                 Session.set("registerID", result);
+                FlowRouter.go("/register/1");
             }
         });
 }

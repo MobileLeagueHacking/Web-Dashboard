@@ -26,6 +26,14 @@ Api1.addRoute('events/:region', {
     }
 });
 
+Api1.addRoute('hackathon/:hackID', {
+    get: function() {
+        var hackathonID = this.urlParams.hackID;
+        var hackathon = Meteor.users.findOne({ hackathon_id: "5MZqdPPJhZLYGutwx" });
+        console.log(hackathon);
+        return hackathon; 
+    }
+});
 
 Api1.addRoute('refresh/:region', {
     get: function() {
