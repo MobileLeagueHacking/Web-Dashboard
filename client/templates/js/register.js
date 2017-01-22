@@ -36,7 +36,7 @@ Template.part2.onRendered(function() {
             var scheduleItem = {
                 name: $('#scheduleName').html(),
                 location: $('#scheduleLocation').html(),
-                time: $('#scheduleTime').html()
+                time: $('#scheduleTime').val()
             }
             Meteor.call("addScheduleItem", Session.get("registerID"), scheduleItem)
             return false;

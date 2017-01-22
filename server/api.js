@@ -26,6 +26,18 @@ Api1.addRoute('events/:region', {
     }
 });
 
+Api1.addRoute('events/id/:hackathonID', {
+    get: function() {
+        var returnArray = [];
+        var hackathonID = this.urlParams.hackathonID;
+        var hackathons = Hackathon.find(hackathonID);
+        hackathons.forEach(function(item) {
+            returnArray.push(item);
+        });
+        return returnArray;
+    }
+});
+
 Api1.addRoute('hackathon/:hackID', {
     get: function() {
         var hackathonID = this.urlParams.hackID;

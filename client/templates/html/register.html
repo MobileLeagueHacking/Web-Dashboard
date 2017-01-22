@@ -111,7 +111,9 @@
                     <tr>
                         <td id="scheduleName" class="tdInput" contenteditable="true" data-text="SpartaHack"></td>
                         <td id="scheduleLocation" class="tdInput" contenteditable="true" data-text="Room 202"></td>
-                        <td id="scheduleTime" class="tdInput" contenteditable="true" data-text="11:50"></td>
+                        <td class="tdInput" data-text="11:50">
+                            <input id="scheduleTime" type="datetime-local" name="bdaytime">
+                        </td>
                     </tr>
                     {{#each scheduleItems}}
                     <tr>
@@ -184,5 +186,5 @@
     </div>
 </template>
 <template name="part3">
-<h1 class="white-text">Success!</h1>
+    <h1 class="white-text">Success!</h1>
 </template>
