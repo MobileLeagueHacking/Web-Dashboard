@@ -1,2 +1,2 @@
-Meteor.subscribe("reports");
-Meteor.subscribe("users");
+Meteor.subscribe("hackathons");
+// Meteor.subscribe("users");

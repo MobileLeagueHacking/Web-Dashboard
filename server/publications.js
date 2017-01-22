@@ -1,8 +1,8 @@
-// import {Reports} from '../lib/models/Reports.js'
+import {Hackathons} from '../lib/models/Hackathons.js'
 
-// Meteor.publish("reports", function() {
-//     return Reports.find();
-// });
+Meteor.publish("hackathons", function() {
+    return Hackathons.find();
+});
 // Meteor.publish("users", function() {
 //     return Meteor.users.find();
 // })

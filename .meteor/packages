@@ -27,3 +27,4 @@ kadira:blaze-layout
 mrt:cheerio
 materialize:materialize@=0.97.0
 kadira:flow-router
+msavin:mongol
