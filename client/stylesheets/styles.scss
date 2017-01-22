@@ -1,8 +1,16 @@
 // CSS
 head,
 body {
-    text-align: center;
     background-color: #009688;
+}
+
+.container {
+    text-align: center;
+}
+
+.contRegisterTwo {
+    height: auto;
+    min-height: 100%;
 }
 
 .card-title {

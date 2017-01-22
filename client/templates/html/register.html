@@ -29,56 +29,122 @@
     </div>
 </template>
 <template name="part2">
-    <span class="card-title">Additional School Information</span>
-    <form id="additionalInfo" class="col s12">
+    <div class="partTwoLayout">
         <div class="row">
-            <div class="input-field col s6">
-                <i class="material-icons prefix">person</i>
-                <input id="principal_name" type="text" class="validate">
-                <label for="principal_name">Principal Name</label>
-            </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">email</i>
-                <input id="principal_email" type="email" class="validate">
-                <label for="principal_email">Principal Email</label>
-            </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input id="main_admin" type="text" class="validate tooltipped" data-position="bottom" data-delay="50" data-tooltip="The main administrator who will control the school's account.">
-                <label for="main_admin">Main Admin Name</label>
-            </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input id="admin_email" type="email" class="validate">
-                <label for="admin_email">Admin Email</label>
+            <div class="col s12 m12">
+                <div class="card white darken-1 contRegisterTwo">
+                    <div class="card-content white-text">
+                        <span class="card-title">Manage Hackathon Settings</span>
+                    </div>
+                    <p>What would you like to happen when the hackathon attendee clicks your hackathon in the app?</p>
+                    <div class="card-action">
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="tabs">
+                                <li class="tab col s3"><a href="#test1">Previous App</a></li>
+                                <li class="tab col s3"><a href="#test4">App Template</a></li>
+                                <li class="tab col s3"><a href="#test4">Use URL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ifAppClass">
+                        <h5>--- Colors ---</h5>
+                        <div>
+                            <h6>Primary Color</h6>
+                            <input type="color" name="Primary" value="#ff0000">
+                        </div>
+                        <div>
+                            <h6>Secondary Color</h6>
+                            <input type="color" name="seconday" value="#ff0000">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- NAME ___ LOCATION ___ START TIME -->
+                        <h5>--- Schedule ---</h5>
+                        <div class="tablediv">
+                            <table class="striped responsive-table">
+                                <thead>
+                                    <tr>
+                                        <th data-field="name">Name</th>
+                                        <th data-field="location">Location</th>
+                                        <th data-field="time">Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tdInput" contenteditable="true" data-text="SpartaHack"></td>
+                                        <td class="tdInput" contenteditable="true" data-text="Room 202"></td>
+                                        <td class="tdInput" contenteditable="true" data-text="11:50"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>asdasd</td>
+                                        <td>asdasd</td>
+                                        <td>asdasd</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <h5>--- Prizes ---</h5>
+                        <div class="tablediv">
+                            <table class="striped responsive-table">
+                                <thead>
+                                    <tr>
+                                        <th data-field="description">Description</th>
+                                        <th data-field="sponsor">Sponsor</th>
+                                        <th data-field="value">Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tdInput" contenteditable="true" data-text="This prize is a thing! Get it for doing a thing!"></td>
+                                        <td class="tdInput" contenteditable="true" data-text="IBM Bluemix"></td>
+                                        <td class="tdInput" contenteditable="true" data-text="$200"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>asdasd</td>
+                                        <td>asdasd</td>
+                                        <td>asdasd</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <h5>--- Sponsors ---</h5>
+                        <div class="tablediv">
+                            <table class="striped responsive-table">
+                                <thead>
+                                    <tr>
+                                        <th data-field="description">Description</th>
+                                        <th data-field="sponsor">Sponsor</th>
+                                        <th data-field="value">Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tdInput" contenteditable="true" data-text="This prize is a thing! Get it for doing a thing!"></td>
+                                        <td class="tdInput" contenteditable="true" data-text="IBM Bluemix"></td>
+                                        <td class="tdInput" contenteditable="true" data-text="$200"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>asdasd</td>
+                                        <td>asdasd</td>
+                                        <td>asdasd</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </form>
+    </div>
 </template>
 <template name="part3">
-    <span class="card-title">Payment Information</span>
-    <form id="paymentInfo" class="col s12">
-        <div class="row">
-            <div class="input-field col s6">
-                <i class="material-icons prefix">person</i>
-                <input id="ccnum" type="text" class="validate">
-                <label for="ccnum">Credit Card Number</label>
-            </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">email</i>
-                <input id="cvc" type="tel" class="validate">
-                <label for="cvc">CVC Number</label>
-            </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input id="expmonth" type="tel" class="validate tooltipped" data-position="bottom" data-delay="50" data-tooltip="The main administrator who will control the school's account.">
-                <label for="expmonth">Experation Month</label>
-            </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input id="expyear" type="tel" class="validate">
-                <label for="expyear">Experation Year</label>
-            </div>
-        </div>
-    </form>
 </template>

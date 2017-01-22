@@ -1,0 +1,23 @@
+$overflow-help: initial;
+body {
+    overflow: $overflow-help;
+}
+
+.partTwoLayout {
+    .contRegisterTwo {
+        height: 100vh;
+        margin-top: 70px;
+    }
+    .tablediv {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    [contentEditable=true]:empty:not(:focus):before {
+        content: attr(data-text);
+        color: gray;
+    }
+    .tdInput {
+        max-width: 100px;
+        word-break: break-all;
+    }
+}

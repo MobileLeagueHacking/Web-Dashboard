@@ -1,2 +1,2 @@
 Meteor.subscribe("hackathons");
-// Meteor.subscribe("users");
+Meteor.subscribe("users");
